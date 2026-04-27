@@ -196,3 +196,19 @@ openspec/
 * Não realizar upload de documentos com dados institucionais privados;
 * Evitar gerar trechos de código avulsos sem a respectiva análise de impacto nas demais funcionalidades do sistema;
 * Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec.
+
+
+## Ferramentas CLI
+
+### Google GEMINI Cli
+
+`npm install -g @google/gemini-cli`
+
+Ferramenta gratuita com imensa janela de contexto.
+
+
+### Claude Code
+
+<https://code.claude.com/docs/pt/overview#native-install-recommended>
+
+Considerada uma das melhores ferramentas de desenvolvimento por IA

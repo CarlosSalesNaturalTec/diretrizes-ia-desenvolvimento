@@ -1,0 +1,198 @@
+# Diretrizes gerais para o uso de Inteligência Artificial no suporte ao Desenvolvimento de Software
+
+## SERIN - Secretaria de Relações Intitucionais do Estado da Bahia (APG / CGOTIC)
+
+## Contexto
+
+**Inteligência Artificial (IA)**: Sistemas computacionais que imitam a forma como humanos pensam e aprendem, superando-os em velocidade e na capacidade de processar grandes volumes de informação simultaneamente.
+
+**Machine Learning (ML)**: Uma subárea da IA onde os computadores aprendem a partir de dados, em vez de seguirem regras rígidas de programação. Exemplos de ML:
+
+* Clássico:
+    * Aprendizado Supervisionado
+        * Classificação
+        * Regressão
+    * Aprendizado Não Supervisionado
+        * Clustering 
+        * Associação
+* Aprendizado por Reforço
+* Redes Neurais 
+    * IA Generativa
+
+### Casos de uso - *IA Tradicional*: 
+
+* Sistemas de Recomendação. Exemplos: Netflix, Spotify;
+* Detecção de Fraude e Anomalias no setor bancário e de segurança;
+* Visão Computacional. Exemplos: Reconhecimento de imagens, reconhecimento facial, etc;
+* Análise de Sentimento, muito usado por marcas para monitorar redes sociais e classificar se a opinião pública é positiva, negativa ou neutra;
+* Manutenção Preditiva, comum na indústria 4.0, analisando milhares de parâmetros de equipamentos, antecedendo problemas antes de acontecerem.
+
+Alguns artigos escritos por mim sobre o tema, publicados no ano de 2020 : 
+
+* [Inteligência Artificial](https://carlossalesti.gitbook.io/inteligencia-artificial-1)
+* [Machine Learning](https://carlossalesti.gitbook.io/machine-learning)
+* [Regressão Linear](https://carlossalesti.gitbook.io/linear-regression)
+* [Futuro do Trabalho](https://carlossalesnaturaltec.github.io/Futuro_do_Trabalho/)
+
+
+## IA Generativa
+
+Uma aplicação específica dentro do Deep Learning focada em **CRIAR NOVOS DADOS**, em vez de apenas classificar ou prever dados existentes.
+
+* Entendimento de linguagem natural: Chatbots, tradução automática, pesquisas;
+* Análise de grandes volumes de dados. Exemplo: resumo de LOGS, artigos acadêmicos, livros, etc;
+* Criação de imagens, áudio e vídeo;
+* Desenvolvimento e análise de Software.
+
+## IA Generativa no auxílio ao Desenvolvimento de Software
+
+* Identificação de bugs;
+* Geração de documentação;
+* Desenvolvimento de novas funcionalidades;
+* Aumento de produtividade: código gerado em segundos;
+* Suporte no aprendizado de novas linguagens de programação e frameworks.
+
+### Casos de uso:
+
+* Utilizando a interface de um fornecedor como ChatGPT, Gemini, Claude, etc. Pesquisando, copiando e colando trechos de código avulsos;
+* Em conjunto com a IDE. Exemplos: 
+    * COPILOT: autocomplete, etc;
+    * Cursor: IDE baseada no VS Code com chat integrado ao código.
+* Ferramentas **CLI - Command Line Interface**. Capazes de executar comandos como git, dir, bash, etc. Além de ler, criar e excluir arquivos. Exemplos:
+    * Claude Code
+    * Gemini CLI
+    * Codex
+
+## Status e atribuições do setor de Desenvolvimento de Software - SERIN/APG/CGOTIC
+
+* Manutenção em Sistema legado:
+    * Correção de bugs;
+    * Desenvolvimento de novas funcionalidades;
+    * Integração com terceiros (Rh Bahia, Infobip Teledata, Painel Power BI, etc)
+* Consultas avulsas em banco, geração de planilhas;
+* Análise de Logs **reativa e preventiva**;
+* Correção de vulnerabilidades e depreciação de Libs.
+
+### Exemplo de Complexidade de Software Legado (SIS - Sistema Integrado SERIN)
+
+```
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                    SIS - NÚMEROS MACRO                          │
+  ├─────────────────────────────────────────────────────────────────┤
+  │                                                                 │
+  │  BACKEND (Laravel / PHP / PostgreSQL)                           │
+  │  ──────────────────────────────────────────                     │
+  │  📦 Arquivos PHP (app/)       532                              │
+  │  🎛️ Controllers               143 classes                      │
+  │  🧩 Models                    198                              │  
+  │  🔧 Artisan Commands           41                              │
+  │  📁 Migrations                182                              │  
+  │  🗂️ Route files                22                              │
+  │                                                                 │
+  │  FRONTEND (Vue + Inertia.js + Tailwind)                         │
+  │  ─────────────────────────────────────────                      │
+  │  📄 Pages (.vue)               534                              │
+  │  🧱 Shared Components           19                              │
+  │  🏪 Pinia Stores                44                              │
+  │  📝 ~29.000 linhas JS/Vue                                       │
+  │                                                                 │
+  │  DATABASE (PostgreSQL Multi-Schema)                             │
+  │  ─────────────────────────────────                              │
+  │  🗄️ Schemas/Connections:  12                                   │  
+  │                                                                 │
+  └─────────────────────────────────────────────────────────────────┘
+
+```
+
+### Tarefas realizadas pela equipe no período Abr/2025 a Abr/2026
+
+![Tarefas no último ano](images/planner.png)
+
+| Tarefa | Quantidade | Observações |
+|:----------|:--------|:--------|
+| Concluídas | 315 | Últimos 12 meses |
+| Em Andamento | 23 | Incluindo tarefas com pendência do usuário |
+| Não Iniciada | 04 | Aguardando na fila|
+
+### Problemas enfrentados pelo Setor
+
+* Equipe disponível:
+    * 01 Analista Sênior + 01 Analista Júnior + 02 estagiários;    
+    * Analista Sênior atuando como Desenvolvedor, Líder Técnico, Code reviewer além do suporte aos estagiários.
+* Ausência de Documentação Oficial do Sistema gerando dificuldade no *On board* de novos membros;
+* Uso de IA de forma não coordenada, gerando códigos "avulsos" e eventualmente incompatível com a estrutura existente;
+* Risco à exposição de dados sensíveis (banco de dados, credenciais, etc);
+* Entendimento sobre uso de **Janela de Contexto** no desenvolvimento de features extensas. *Limitação dos modelos de IA em manter coerência em tarefas muito longas ou complexas.*
+
+## Desenvolvimento Orientado a Especificações / SDD (Specification-Driven Development)
+
+Para endereçar esses problemas e riscos, especialmente no uso não coordenado de IA e no acúmulo de demandas pela equipe, propomos a adoção de uma metodologia baseada em especificações: o **SDD**.
+
+**SDD** é uma metodologia onde a especificação técnica (o "contrato" do que o software deve fazer) é escrita antes da implementação do código. É um pilar fundamental da Engenharia de Software Moderna, especialmente em arquiteturas de microserviços e APIs.
+
+### Ferramentas comuns:
+
+* BMAD
+* GitHub Spec Kit
+* Kiro (AWS)
+* OpenSpec
+
+Dentre as ferramentas disponíveis, destacamos o **OpenSpec** por ser independente de fornecedor e compatível com os principais ambientes do mercado.
+
+### OpenSpec
+
+* Indicado para projetos do tipo: 
+    * Greenfield - Sistemas novos;
+    * Brownfield - Sistemas legados. Analisa estrutura existente do código antes de propor ou implementar.
+* Independe de fornecedor. Compatível com as principais plataformas: Claude Code, Cursor, Gemini, GitHub Copilot, Windsurf, etc;
+* Funciona melhor com modelos de alta capacidade de raciocínio;
+* Repositório oficial : `https://github.com/Fission-AI/OpenSpec`;
+* Desenvolvido em Node.js + TypeScript;
+* Adiciona ao seu projeto: Agentes de codificação e Skills em formato markdown (.md);
+
+#### Instalação
+
+```
+# Instalar globalmente
+npm install -g @fission-ai/openspec
+
+# Inicializar no projeto
+openspec init
+
+# Ativar o Workflow Expandido:
+openspec config profile
+openspec update
+```
+
+#### Estrutura de pastas
+
+```
+openspec/
+├── project.md          ← contexto geral do projeto
+├── specs/              ← estado atual (source of truth)
+└── changes/
+    └── <feature>/
+        ├── proposal.md     ← por que e o que muda
+        ├── specs/          ← delta specs (ADDED/MODIFIED/REMOVED)
+        ├── design.md       ← abordagem técnica
+        └── tasks.md        ← checklist de implementação
+```
+
+#### Como usar
+
+| Comando | Exemplo | Descrição |
+|----------|:--------|:---------|
+| EXPLORE | `/opsx:explore Como está estruturada o processo de Login` | Nesta etapa NADA é criado, os agentes apenas analisam a fonte da verdade (source of truth), antes de propor ou responder qualquer coisa. |
+| PROPOSE | `/opsx:propose Adicionar autenticação em dois fatores (2FA) ao processo de Login`| Redigir a **Proposta** de mudança. A IA cria o diretório `changes/<feature>/` com todos os artefatos: `proposal.md`, `specs/`, `design.md` e `tasks.md.` |
+| APPLY | `/opsx:apply` | A IA executa cada tarefa do `tasks.md` em sequência, marcando o progresso conforme avança. |
+| VERIFY | `/opsx:verify` | Valida cobertura de cenários GIVEN/WHEN/THEN. Este é um comando extra! Necessário ativar o workflow expandido. |
+| ARCHIVE | `/opsx:archive` | Fechar o ciclo e atualizar a *source of truth*. A proposta é arquivada fisicamente em `changes/archive/`, e os specs em `openspec/specs/` são atualizados — criando um histórico de auditoria que mostra por que cada mudança foi feita. |
+
+
+## Recomendações - Pré requisitos mínimos ao utilizar ferramentas de Inteligência Artificial no auxílio ao Desenvolvimento de Software
+
+* Nas configurações do seu provedor de IA Generativa, **NÃO PERMITIR** o uso de suas conversas e sessões de programação para treinar e melhorar os modelos de IA;
+* Não compartilhar credenciais em chats (.env, tokens, senhas, etc);
+* Não realizar upload de documentos com dados institucionais privados;
+* Evitar gerar trechos de código avulsos sem a respectiva análise de impacto nas demais funcionalidades do sistema;
+* Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec.

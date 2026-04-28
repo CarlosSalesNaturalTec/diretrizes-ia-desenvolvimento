@@ -178,7 +178,7 @@ openspec/
         └── tasks.md        ← checklist de implementação
 ```
 
-#### Como usar
+#### Como usar (*Human in Loop*)
 
 | Comando | Exemplo | Descrição |
 |----------|:--------|:---------|
@@ -189,13 +189,34 @@ openspec/
 | ARCHIVE | `/opsx:archive` | Fechar o ciclo e atualizar a *source of truth*. A proposta é arquivada fisicamente em `changes/archive/`, e os specs em `openspec/specs/` são atualizados — criando um histórico de auditoria que mostra por que cada mudança foi feita. |
 
 
-## Recomendações - Pré requisitos mínimos ao utilizar ferramentas de Inteligência Artificial no auxílio ao Desenvolvimento de Software
+#### Vocabulário RFC 2119 utilizado nos arquivos `specs/spec.md`
 
+| Termo | Sinônimos aceitos | Força | Exemplo |
+|:----------|:--------|:---------|:---------|
+| MUST | SHALL, REQUIRED | Obrigação absoluta. Não há exceção | *"O sistema MUST validar o token antes de processar a requisição"*  |
+| MUST NOT | SHALL NOT | Proibição absoluta. Nunca pode ocorrer| *"O sistema MUST NOT armazenar senhas em texto plano."*  |
+| SHOULD | RECOMMENDED | Fortemente recomendado, mas há razões legítimas para não seguir. | *"O sistema SHOULD retornar erros em menos de 200ms."* |
+| SHOULD NOT | NOT RECOMMENDED | Fortemente desaconselhado, mas não proibido | *"O sistema SHOULD NOT logar dados sensíveis do usuário."* |
+| MAY | OPTIONAL | Puramente opcional. Implementações podem ou não suportar | *"O sistema MAY aceitar autenticação via OAuth além de JWT."* |
+
+O framework usa esses termos para gerar testes automaticamente e classificar severidade de falhas:
+* Violação de MUST/SHALL → blocker, o sistema está não-conforme
+* Violação de SHOULD → warning, desvio justificável
+* MAY não gera teste obrigatório → entra como cobertura opcional
+
+
+## Recomendações Gerais
+
+### Chats de IA
 * Nas configurações do seu provedor de IA Generativa, **NÃO PERMITIR** o uso de suas conversas e sessões de programação para treinar e melhorar os modelos de IA;
-* Não compartilhar credenciais em chats (.env, tokens, senhas, etc);
+* Não compartilhar credenciais: .env, tokens, senhas, etc;
 * Não realizar upload de documentos com dados institucionais privados;
-* Evitar gerar trechos de código avulsos sem a respectiva análise de impacto nas demais funcionalidades do sistema;
-* Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec.
+* Evitar gerar trechos de código avulsos por conta do risco de impacto nas demais funcionalidades do sistema.
+
+### Desenvolvimento orientado a especificações - SDD
+* Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec;
+* Ao ler os arquivos `proposal.md` e `design.md` gerados pelo OpenSpec é possível que você se depare com eventuais comandos e técnicas de programação desconhecidos. Nestes casos aproveite a oportunidade para **APRENDER** . Caso não conheça algum tema abordado, solicite explicações e detalhamentos sobre os mesmos;
+* Ao concluir implementações, gerar documentação com regras de negócio em pasta `/docs/regras_de_negocio/{nome_do_modulo}`.
 
 
 ## Ferramentas CLI

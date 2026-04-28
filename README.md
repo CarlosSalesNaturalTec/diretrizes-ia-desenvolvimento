@@ -217,7 +217,6 @@ O framework usa esses termos para gerar testes automaticamente e classificar sev
 ### Desenvolvimento orientado a especificações - SDD
 * Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec;
 * Ao ler os arquivos `proposal.md` e `design.md` gerados pelo OpenSpec é possível que você se depare com eventuais comandos e técnicas de programação desconhecidos. Nestes casos aproveite a oportunidade para **APRENDER** . Caso não conheça algum tema abordado, solicite explicações e detalhamentos sobre os mesmos;
-* Ao concluir implementações, gerar documentação com regras de negócio em pasta `/docs/regras_de_negocio/{nome_do_modulo}`.
 
 
 ## Ferramentas CLI
@@ -250,3 +249,12 @@ O OpenSpec recomenda modelos de alto raciocínio — Opus 4.5 e GPT 5.2 — tant
 <https://code.claude.com/docs/pt/overview#native-install-recommended>
 
 Considerada uma das melhores ferramentas de desenvolvimento por IA o Claude Code **NÃO** está disponível no plano Free. O free tier dá acesso ao Claude chat via web, iOS, Android e desktop, mas o ambiente terminal do Claude Code requer no mínimo um plano Pro ou créditos de API.
+
+
+## Próximos passos
+
+- [ ] Utilizando a técnica de `SDD` com `OpenSpec`, implementar tarefas utilizando a ferramenta gratuita `Google Gemini CLI` com modelo `gemini-2.5-flash`e avaliar os resultados obtidos;
+- [ ] Identificar modelos de LLM Open Source capazes de serem executados em servidor local `On-premise`;
+- [ ] Configurar modelo `On-premise` para ser utilizado em conjunto com ferramentas de CLI como Claude Code e Gemini CLI;
+- [ ] Configurar modelo `On-premise` para ser utilizado na construção de novas funcionalidades / melhorias no sistema;
+- [ ] Configurar modelo `On-premise` para ser utilizado no processo contínuo de análise de LOGs.

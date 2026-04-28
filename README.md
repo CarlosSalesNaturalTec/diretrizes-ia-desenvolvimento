@@ -63,17 +63,17 @@ Uma aplicação específica dentro do Deep Learning focada em **CRIAR NOVOS DADO
     * Gemini CLI
     * Codex
 
-## Status e atribuições do setor de Desenvolvimento de Software - SERIN/APG/CGOTIC
+## SERIN/APG/CGOTIC - Atribuições do setor de Desenvolvimento de Software
 
 * Manutenção em Sistema legado:
     * Correção de bugs;
     * Desenvolvimento de novas funcionalidades;
     * Integração com terceiros (Rh Bahia, Infobip Teledata, Painel Power BI, etc)
-* Consultas avulsas em banco, geração de planilhas;
+* Consultas avulsas em banco de dados, geração de planilhas;
 * Análise de Logs **reativa e preventiva**;
 * Correção de vulnerabilidades e depreciação de Libs.
 
-### Exemplo de Complexidade de Software Legado (SIS - Sistema Integrado SERIN)
+### Complexidade do Software Legado (SIS - Sistema Integrado SERIN)
 
 ```
   ┌─────────────────────────────────────────────────────────────────┐
@@ -116,9 +116,10 @@ Uma aplicação específica dentro do Deep Learning focada em **CRIAR NOVOS DADO
 
 ### Problemas enfrentados pelo Setor
 
+* Alto volume de tarefas/demandas. 
 * Equipe disponível:
-    * 01 Analista Sênior + 01 Analista Júnior + 02 estagiários;    
-    * Analista Sênior atuando como Desenvolvedor, Líder Técnico, Code reviewer além do suporte aos estagiários.
+    * 01 Analista + 02 estagiários;    
+    * Analista atuando como Desenvolvedor, Líder Técnico, Code reviewer e na orientação e suporte aos estagiários.
 * Ausência de Documentação Oficial do Sistema gerando dificuldade no *On board* de novos membros;
 * Uso de IA de forma não coordenada, gerando códigos "avulsos" e eventualmente incompatível com a estrutura existente;
 * Risco à exposição de dados sensíveis (banco de dados, credenciais, etc);

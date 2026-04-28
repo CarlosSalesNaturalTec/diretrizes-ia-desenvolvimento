@@ -200,15 +200,31 @@ openspec/
 
 ## Ferramentas CLI
 
-### Google GEMINI Cli
+### Google Gemini Cli
 
 `npm install -g @google/gemini-cli`
 
-Ferramenta gratuita com imensa janela de contexto.
+Como obter uma API Key gratuita do Google Gemini:
 
+1. Acesse o Google AI Studio: <https://aistudio.google.com/>
+2. Faça login com sua conta Google normal
+3. No menu lateral, clique em "Get API Key"
+4. Clique em "Create API key"
+5. Copie a chave — ela começa com: `AIza...`
+6. Adicione a variável `GEMINI_API_KEY` no arquivo `.env`: `GEMINI_API_KEY=AIza...`
+
+**ATENÇÃO!** Guarde sua API KEY como senha, não exponha publicamente.
+
+*O que o free tier libera para o Gemini CLI:*
+
+Usando uma Gemini API Key no free tier, o Gemini CLI faz requests apenas para o modelo Flash. Ou seja, com a chave gratuita você obtém automaticamente o Gemini 2.5 Flash.
+
+*Limitação prática:*
+
+O OpenSpec recomenda modelos de alto raciocínio — Opus 4.5 e GPT 5.2 — tanto para planejamento quanto para implementação. O Gemini 2.5 Flash funciona, mas é um modelo mais leve que o Pro/Ultra para tarefas complexas de arquitetura. 
 
 ### Claude Code
 
 <https://code.claude.com/docs/pt/overview#native-install-recommended>
 
-Considerada uma das melhores ferramentas de desenvolvimento por IA
+Considerada uma das melhores ferramentas de desenvolvimento por IA o Claude Code **NÃO** está disponível no plano Free. O free tier dá acesso ao Claude chat via web, iOS, Android e desktop, mas o ambiente terminal do Claude Code requer no mínimo um plano Pro ou créditos de API.

@@ -4,14 +4,14 @@
 
 ## Contexto
 
-**Inteligência Artificial (IA)**: Sistemas computacionais que imitam a forma como humanos pensam e aprendem, superando-os em velocidade e na capacidade de processar grandes volumes de informação simultaneamente.
+[Inteligência Artificial (IA)](https://carlossalesti.gitbook.io/inteligencia-artificial-1): Sistemas computacionais que imitam a forma como humanos pensam e aprendem, superando-os em velocidade e na capacidade de processar grandes volumes de informação simultaneamente.
 
-**Machine Learning (ML)**: Uma subárea da IA onde os computadores aprendem a partir de dados, em vez de seguirem regras rígidas de programação. Exemplos de ML:
+[Machine Learning (ML)](https://carlossalesti.gitbook.io/machine-learning) : Uma subárea da IA onde os computadores aprendem a partir de dados, em vez de seguirem regras rígidas de programação. Exemplos de ML:
 
 * Clássico:
     * Aprendizado Supervisionado
         * Classificação
-        * Regressão
+        * [Regressão](https://carlossalesti.gitbook.io/linear-regression)
     * Aprendizado Não Supervisionado
         * Clustering 
         * Associação
@@ -26,14 +26,6 @@
 * Visão Computacional. Exemplos: Reconhecimento de imagens, reconhecimento facial, etc;
 * Análise de Sentimento, muito usado por marcas para monitorar redes sociais e classificar se a opinião pública é positiva, negativa ou neutra;
 * Manutenção Preditiva, comum na indústria 4.0, analisando milhares de parâmetros de equipamentos, antecedendo problemas antes de acontecerem.
-
-Alguns artigos escritos por mim sobre o tema, publicados no ano de 2020 : 
-
-* [Inteligência Artificial](https://carlossalesti.gitbook.io/inteligencia-artificial-1)
-* [Machine Learning](https://carlossalesti.gitbook.io/machine-learning)
-* [Regressão Linear](https://carlossalesti.gitbook.io/linear-regression)
-* [Futuro do Trabalho](https://carlossalesnaturaltec.github.io/Futuro_do_Trabalho/)
-
 
 ## IA Generativa
 
@@ -248,7 +240,7 @@ O OpenSpec recomenda modelos de alto raciocínio — Opus 4.5 e GPT 5.2 — tant
 
 <https://code.claude.com/docs/pt/overview#native-install-recommended>
 
-Considerada uma das melhores ferramentas de desenvolvimento por IA o Claude Code **NÃO** está disponível no plano Free. O free tier dá acesso ao Claude chat via web, iOS, Android e desktop, mas o ambiente terminal do Claude Code requer no mínimo um plano Pro ou créditos de API.
+Utiliza um dos modelos recomendados oficialmente pela equipe criadora do OpenSpec (Opus 4.5), no entanto **NÃO** está disponível no plano Free. O free tier dá acesso ao Claude chat via web, iOS, Android e desktop, mas o ambiente terminal do Claude Code requer no mínimo um plano Pro ou créditos de API. 
 
 
 ## Próximos passos

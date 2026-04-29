@@ -139,7 +139,7 @@ Dentre as ferramentas disponíveis, destacamos o **OpenSpec** por ser independen
     * Brownfield - Sistemas legados. Analisa estrutura existente do código antes de propor ou implementar.
 * Independe de fornecedor. Compatível com as principais plataformas: Claude Code, Cursor, Gemini, GitHub Copilot, Windsurf, etc;
 * Funciona melhor com modelos de alta capacidade de raciocínio;
-* Repositório oficial : `https://github.com/Fission-AI/OpenSpec`;
+* Repositório oficial : <https://github.com/Fission-AI/OpenSpec>;
 * Desenvolvido em Node.js + TypeScript;
 * Adiciona ao seu projeto: Agentes de codificação e Skills em formato markdown (.md);
 
@@ -198,19 +198,6 @@ O framework usa esses termos para gerar testes automaticamente e classificar sev
 * MAY não gera teste obrigatório → entra como cobertura opcional
 
 
-## Recomendações Gerais
-
-### Chats de IA
-* Nas configurações do seu provedor de IA Generativa, **NÃO PERMITIR** o uso de suas conversas e sessões de programação para treinar e melhorar os modelos de IA;
-* Não compartilhar credenciais: .env, tokens, senhas, etc;
-* Não realizar upload de documentos com dados institucionais privados;
-* Evitar gerar trechos de código avulsos por conta do risco de impacto nas demais funcionalidades do sistema.
-
-### Desenvolvimento orientado a especificações - SDD
-* Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec;
-* Ao ler os arquivos `proposal.md` e `design.md` gerados pelo OpenSpec é possível que você se depare com eventuais comandos e técnicas de programação desconhecidos. Nestes casos aproveite a oportunidade para **APRENDER** . Caso não conheça algum tema abordado, solicite explicações e detalhamentos sobre os mesmos;
-
-
 ## Ferramentas CLI
 
 ### Google Gemini Cli
@@ -241,6 +228,15 @@ O OpenSpec recomenda modelos de alto raciocínio — Opus 4.5 e GPT 5.2 — tant
 <https://code.claude.com/docs/pt/overview#native-install-recommended>
 
 Utiliza um dos modelos recomendados oficialmente pela equipe criadora do OpenSpec (Opus 4.5), no entanto **NÃO** está disponível no plano Free. O free tier dá acesso ao Claude chat via web, iOS, Android e desktop, mas o ambiente terminal do Claude Code requer no mínimo um plano Pro ou créditos de API. 
+
+
+## Recomendações Gerais
+* Nas configurações do seu provedor de IA Generativa, **NÃO PERMITIR** o uso de suas conversas e sessões de programação para treinar e melhorar os modelos de IA;
+* Não compartilhar credenciais: .env, tokens, senhas, etc;
+* Não realizar upload de documentos com dados institucionais privados;
+* Evitar gerar trechos de código avulsos por conta do risco de impacto nas demais funcionalidades do sistema.
+* Padronizar o fluxo de desenvolvimento com uso de SDD via OpenSpec;
+* Ao ler os arquivos `proposal.md` e `design.md` gerados pelo OpenSpec é possível que você se depare com eventuais comandos e técnicas de programação desconhecidos. Nestes casos aproveite a oportunidade para **APRENDER** . Caso não conheça algum tema abordado, solicite explicações e detalhamentos sobre os mesmos;
 
 
 ## Próximos passos

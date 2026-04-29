@@ -171,11 +171,11 @@ openspec/
         └── tasks.md        ← checklist de implementação
 ```
 
-#### Como usar (*Human in Loop*)
+#### Comandos principais - Exemplos de uso
 
 | Comando | Exemplo | Descrição |
 |----------|:--------|:---------|
-| EXPLORE | `/opsx:explore Como está estruturada o processo de Login` | Nesta etapa NADA é criado, os agentes apenas analisam a fonte da verdade (source of truth), antes de propor ou responder qualquer coisa. |
+| EXPLORE | `/opsx:explore Explore completamente a aplicação existente neste repositório para produzir um levantamento do seu estado atual real — não o estado ideal, mas o que é. Faça uma análise high-level da arquitetura, do banco de dados, dos principais componentes do sistema e suas relações de dependência.` | Nesta etapa NADA é criado, os agentes apenas analisam a fonte da verdade (source of truth), antes de propor ou responder qualquer coisa. |
 | PROPOSE | `/opsx:propose Adicionar autenticação em dois fatores (2FA) ao processo de Login`| Redigir a **Proposta** de mudança. A IA cria o diretório `changes/<feature>/` com todos os artefatos: `proposal.md`, `specs/`, `design.md` e `tasks.md.` |
 | APPLY | `/opsx:apply` | A IA executa cada tarefa do `tasks.md` em sequência, marcando o progresso conforme avança. |
 | VERIFY | `/opsx:verify` | Valida cobertura de cenários GIVEN/WHEN/THEN. Este é um comando extra! Necessário ativar o workflow expandido. |

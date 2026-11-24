@@ -175,11 +175,11 @@ openspec/
 
 | Comando | Exemplo | Descrição |
 |----------|:--------|:---------|
-| EXPLORE | `/opsx:explore Explore completamente a aplicação existente neste repositório para produzir um levantamento do seu estado atual real — não o estado ideal, mas o que é. Faça uma análise high-level da arquitetura, do banco de dados, dos principais componentes do sistema e suas relações de dependência.` | Nesta etapa NADA é criado, os agentes apenas analisam a fonte da verdade (source of truth), antes de propor ou responder qualquer coisa. |
-| PROPOSE | `/opsx:propose Adicionar autenticação em dois fatores (2FA) ao processo de Login`| Redigir a **Proposta** de mudança. A IA cria o diretório `changes/<feature>/` com todos os artefatos: `proposal.md`, `specs/`, `design.md` e `tasks.md.` |
-| APPLY | `/opsx:apply` | A IA executa cada tarefa do `tasks.md` em sequência, marcando o progresso conforme avança. |
-| VERIFY | `/opsx:verify` | Valida cobertura de cenários GIVEN/WHEN/THEN. Este é um comando extra! Necessário ativar o workflow expandido. |
-| ARCHIVE | `/opsx:archive` | Fechar o ciclo e atualizar a *source of truth*. A proposta é arquivada fisicamente em `changes/archive/`, e os specs em `openspec/specs/` são atualizados — criando um histórico de auditoria que mostra por que cada mudança foi feita. |
+| EXPLORE | `/openspec-explore Explore completamente a aplicação existente neste repositório para produzir um levantamento do seu estado atual real — não o estado ideal, mas o que é. Faça uma análise high-level da arquitetura, do banco de dados, dos principais componentes do sistema e suas relações de dependência.` | Nesta etapa NADA é criado, os agentes apenas analisam a fonte da verdade (source of truth), antes de propor ou responder qualquer coisa. |
+| PROPOSE | `/openspec-propose Adicionar autenticação em dois fatores (2FA) ao processo de Login`| Redigir a **Proposta** de mudança. A IA cria o diretório `changes/<feature>/` com todos os artefatos: `proposal.md`, `specs/`, `design.md` e `tasks.md.` |
+| APPLY | `/openspec-apply-change` | A IA executa cada tarefa do `tasks.md` em sequência, marcando o progresso conforme avança. |
+| VERIFY | `/openspec-verify-change` | Valida cobertura de cenários GIVEN/WHEN/THEN. Este é um comando extra! Necessário ativar o workflow expandido. |
+| ARCHIVE | `/openspec-archive-change` | Fechar o ciclo e atualizar a *source of truth*. A proposta é arquivada fisicamente em `changes/archive/`, e os specs em `openspec/specs/` são atualizados — criando um histórico de auditoria que mostra por que cada mudança foi feita. |
 
 
 #### Vocabulário RFC 2119 utilizado nos arquivos `specs/spec.md`
